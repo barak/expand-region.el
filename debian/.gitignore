@@ -1,0 +1,5 @@
+/*.debhelper
+/*.debhelper.log
+/*.substvars
+/expand-region-el/
+/files
