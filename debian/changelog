@@ -1,0 +1,5 @@
+expand-region-el (0+git.1.d157d7f-1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 23 Aug 2012 22:48:21 +0200

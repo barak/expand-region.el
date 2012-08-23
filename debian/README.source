@@ -1,0 +1,9 @@
+expand-region-el for Debian
+---------------------------
+
+Upstream is not yet giving version numbers, so I am using version of
+the form "0+git.1.<comitid>" and "git export" to create a tarball.
+There are submodules defined in the upstream git repo; these are used
+for testing and are not included in the created tarball.
+
+ -- Barak A. Pearlmutter <bap@debian.org>, Thu, 23 Aug 2012 23:09:11 +0200
