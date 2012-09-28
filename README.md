@@ -1,4 +1,4 @@
-# expand-region.el
+# expand-region.el [![Build Status](https://secure.travis-ci.org/magnars/expand-region.el.png)](http://travis-ci.org/magnars/expand-region.el)
 
 Expand region increases the selected region by semantic units. Just keep
 pressing the key until it selects what you want.
@@ -111,8 +111,22 @@ sure to add a set of basic tests around the functionality you're changing.
 * [fgeller](https://github.com/fgeller) and [edmccard](https://github.com/edmccard) contributed better support for python and its multiple modes.
 * [François Févotte](https://github.com/ffevotte) contributed expansions for C and C++.
 * [Roland Walker](https://github.com/rolandwalker) added option to copy the contents of the most recent action to a register, and some fixes.
+* [Damien Cassou](https://github.com/DamienCassou) added option to continue expanding/contracting with fast keys after initial expand.
 
 Thanks!
+
+## Changelist
+
+### From 0.7 to 0.8
+
+* Improve js-, ruby-, python- and latex-modes
+* Support built-in javascript-mode
+* Handle narrowed buffers correctly
+* Include mode-specific expansions when autoloading
+* Provide option to copy the contents of the most recent action to a register
+* Add cc-mode specific expansions
+* Add customization to turn off skipping whitespace when expanding
+* Continue expanding/contracting with one key press (optional)
 
 ## License
 

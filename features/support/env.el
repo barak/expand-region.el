@@ -5,6 +5,7 @@
   (setq expand-region-util-path (expand-file-name "util" project-directory)))
 
 (add-to-list 'load-path expand-region-root-path)
+(add-to-list 'load-path expand-region-util-path)
 (add-to-list 'load-path (expand-file-name "espuds" expand-region-util-path))
 (add-to-list 'load-path (expand-file-name "features/support/vendor/python-el" expand-region-root-path))
 
@@ -20,6 +21,7 @@
  (erase-buffer)
  (transient-mark-mode 1)
  (cua-mode 0)
+ (setq er--show-expansion-message t)
  (setq set-mark-default-inactive nil)
  (deactivate-mark))
 
