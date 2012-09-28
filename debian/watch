@@ -1,0 +1,4 @@
+version=3
+
+http://githubredir.debian.net/github/magnars/expand-region.el \
+ /github/magnars/expand-region.el/([0-9.]*)\.tar\.gz
