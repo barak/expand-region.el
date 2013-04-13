@@ -1,3 +1,9 @@
+expand-region-el (0.9.0-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sat, 13 Apr 2013 20:52:20 +0100
+
 expand-region-el (0.8.0-1) unstable; urgency=low
 
   * New (official) upstream release
