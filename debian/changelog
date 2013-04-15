@@ -1,8 +1,13 @@
 expand-region-el (0.9.0-1) unstable; urgency=low
 
   * New upstream version
+  * Disable sml-mode-expansions
+    - incompatible with Debian sml-mode 4.1-x
+    - tested upstream with sml-mode 6.3
+    - quilt patch to remove autoload
+    - debian/rules tweak to not install file
 
- -- Barak A. Pearlmutter <bap@debian.org>  Sat, 13 Apr 2013 20:52:20 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 15 Apr 2013 09:50:57 +0100
 
 expand-region-el (0.8.0-1) unstable; urgency=low
 
