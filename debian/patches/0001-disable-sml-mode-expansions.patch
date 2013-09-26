@@ -9,17 +9,17 @@ compatible with the version in Debian, sml-mode 4.1-x.
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/expand-region.el b/expand-region.el
-index a568806..4fc8093 100644
+index c0a5ad4..2c07066 100644
 --- a/expand-region.el
 +++ b/expand-region.el
-@@ -185,7 +185,9 @@ before calling `er/expand-region' for the first time."
- (eval-after-load "cc-mode"      '(require 'cc-mode-expansions))
- (eval-after-load "text-mode"    '(require 'text-mode-expansions))
+@@ -186,7 +186,9 @@ before calling `er/expand-region' for the first time."
+ (eval-after-load "cc-mode"       '(require 'cc-mode-expansions))
+ (eval-after-load "text-mode"     '(require 'text-mode-expansions))
  (eval-after-load "cperl-mode"    '(require 'cperl-mode-expansions))
--(eval-after-load "sml-mode"     '(require 'sml-mode-expansions))
+-(eval-after-load "sml-mode"      '(require 'sml-mode-expansions))
 +;; This was tested w/ sml-mode 6.3.
 +;; Does not work with Debian sml-mode 4.1-x.
-+;;(eval-after-load "sml-mode"     '(require 'sml-mode-expansions))
++;;(eval-after-load "sml-mode"      '(require 'sml-mode-expansions))
+ (eval-after-load "enh-ruby-mode" '(require 'enh-ruby-mode-expansions))
  
  (provide 'expand-region)
- 
