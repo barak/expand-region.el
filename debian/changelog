@@ -1,3 +1,9 @@
+expand-region-el (0.9.0+2013.10.19-1) unstable; urgency=low
+
+  * Track upstream development snapshot
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 04 Nov 2013 13:05:27 +0000
+
 expand-region-el (0.9.0+2013.09.10-1) unstable; urgency=low
 
   * Remove debian/README.Source, whose contents are no longer true
