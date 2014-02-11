@@ -1,3 +1,9 @@
+expand-region-el (0.10.0-2) unstable; urgency=low
+
+  * emacsen-common compat file
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 11 Feb 2014 14:42:57 +0000
+
 expand-region-el (0.10.0-1) unstable; urgency=medium
 
   * New upstream version
