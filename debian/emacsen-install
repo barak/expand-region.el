@@ -34,7 +34,7 @@ fi
 
 install -m 755 -d ${ELCDIR}
 cd ${ELDIR}
-FILES=`echo *.el`
+FILES=$(echo *.el)
 cd ${ELCDIR}
 ln -sf ${ELRELDIR}/*.el .
 
