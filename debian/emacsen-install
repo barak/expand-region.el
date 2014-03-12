@@ -42,6 +42,7 @@ cat << EOF > path.el
 (debian-pkg-add-load-path-item ".")
 (setq byte-compile-warnings nil)
 EOF
+echo invoking: ${FLAVOR} ${FLAGS} ${FILES}
 ${FLAVOR} ${FLAGS} ${FILES}
 rm -f path.el
 
