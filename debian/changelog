@@ -1,3 +1,14 @@
+expand-region-el (0.10.0-6) unstable; urgency=medium
+
+  * Engage dh_elpa
+    - remove previous emacs scripts
+    - rename package to elpa-expand-region
+    - patch to C-= is set during site-init time
+    - make expand-region-el into dummy transition package
+    - emacs addon team maintenance, per emacs addon team elpa policy
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 16 Sep 2015 08:27:32 +0100
+
 expand-region-el (0.10.0-5) unstable; urgency=medium
 
   * Enable sml-mode-expansions, as these work with sml-mode 6.0+.
