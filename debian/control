@@ -1,18 +1,21 @@
 Source: expand-region-el
 Section: editors
 Priority: extra
-Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Build-Depends: debhelper (>= 9)
+Maintainer: Debian Emacs addons team <pkg-emacsen-addons@lists.alioth.debian.org>
+Uploaders: Barak A. Pearlmutter <bap@debian.org>
+Build-Depends: debhelper (>= 9), dh-elpa (>= 0.0.8)
 Standards-Version: 3.9.6
 Homepage: https://github.com/magnars/expand-region.el
 Vcs-Git: git://anonscm.debian.org/collab-maint/expand-region-el.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/expand-region-el.git
 
-Package: expand-region-el
+Package: elpa-expand-region
 Architecture: all
 Depends: ${misc:Depends}
 Enhances: emacs, emacs23, emacs24
-Breaks: sml-mode (<< 6)
+Breaks: sml-mode (<< 6), expand-region-el (<< 0.10.0-6)
+Replaces: expand-region-el (<< 0.10.0-6)
+Provides: expand-region-el
 Description: Increase selected region in Emacs by semantic units
  Expand region increases the selected region by semantic units.  Just
  keep pressing the 'C-=' key until it selects what you want.
@@ -26,3 +29,10 @@ Description: Increase selected region in Emacs by semantic units
  `abc`, then expand to the contents of the quotes `abc def`, then to
  the entire quote `"abc def"`, then to the contents of the sexp `setq
  alphabet-start "abc def"` and finally to the entire sexp.
+
+Package: expand-region-el
+Architecture: all
+Depends: ${misc:Depends}, elpa-expand-region
+Description: Transition package, expand-region-el to elpa-expand-region
+ Ease transition from expand-region-el to elpa-expand-region with this
+ dummy package.
