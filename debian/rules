@@ -2,7 +2,3 @@
 
 %:
 	dh $@ 
-
-override_dh_install:
-	dh_install
-	-rm --verbose debian/expand-region-el/usr/share/emacs/site-lisp/expand-region-el/sml-mode-expansions.el
