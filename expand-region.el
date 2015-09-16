@@ -140,6 +140,9 @@
 (require 'er-basic-expansions)
 
 ;;;###autoload
+(global-set-key (kbd "C-=") 'er/expand-region)
+
+;;;###autoload
 (defun er/expand-region (arg)
   "Increase selected region by semantic units.
 
