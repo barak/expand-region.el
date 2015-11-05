@@ -1,3 +1,9 @@
+expand-region-el (0.10.0-7) unstable; urgency=medium
+
+  * rebuild with dh-elpa 0.0.16 (closes: #803344)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 05 Nov 2015 09:54:08 +0000
+
 expand-region-el (0.10.0-6) unstable; urgency=medium
 
   * Engage dh_elpa
