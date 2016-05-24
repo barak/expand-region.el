@@ -163,6 +163,8 @@ before calling `er/expand-region' for the first time."
 (eval-after-load "css-mode"      '(require 'css-mode-expansions))
 (eval-after-load "erlang-mode"   '(require 'erlang-mode-expansions))
 (eval-after-load "feature-mode"  '(require 'feature-mode-expansions))
+(eval-after-load "fortan-mode"   '(require 'fortran-mode-expansions))
+(eval-after-load "f90-mode"      '(require 'f90-mode-expansions))
 (eval-after-load "sgml-mode"     '(require 'html-mode-expansions)) ;; html-mode is defined in sgml-mode.el
 (eval-after-load "rhtml-mode"    '(require 'html-mode-expansions))
 (eval-after-load "nxhtml-mode"   '(require 'html-mode-expansions))
@@ -189,6 +191,7 @@ before calling `er/expand-region' for the first time."
 (eval-after-load "cperl-mode"    '(require 'cperl-mode-expansions))
 (eval-after-load "sml-mode"      '(require 'sml-mode-expansions))
 (eval-after-load "enh-ruby-mode" '(require 'enh-ruby-mode-expansions))
+(eval-after-load "subword-mode"  '(require 'subword-mode-expansions))
 
 (provide 'expand-region)
 
