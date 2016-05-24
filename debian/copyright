@@ -23,6 +23,10 @@ Files: feature-mode-expansions.el
 Copyright: 2012 Raimon Grau
 License: GPL-3.0+
 
+Files: fortran-expansions.el f90-expansions.el
+Copyright: 2015 Johan S Hysing
+License: GPL-3.0+
+
 Files: debian/*
 Copyright: 2012 Barak A. Pearlmutter <bap@debian.org>
 License: GPL-3.0+
