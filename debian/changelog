@@ -1,3 +1,11 @@
+expand-region-el (0.10.0-9) unstable; urgency=medium
+
+  * Merge upstream development branch to 02-Sep-2015 commit 59f67115
+  * Merge Fortran support patch from Johan S Hysing
+  * Bump standards version, no changes required.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 24 May 2016 08:53:58 +0100
+
 expand-region-el (0.10.0-8) unstable; urgency=medium
 
   * use dh --with elpa
