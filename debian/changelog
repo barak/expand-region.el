@@ -1,3 +1,10 @@
+expand-region-el (0.11.0-2) unstable; urgency=medium
+
+  * Rearrange dependencies
+  * Fix mistaken upload
+
+ -- Lev Lamberov <dogsleg@debian.org>  Tue, 01 Nov 2016 19:58:56 +0500
+
 expand-region-el (0.11.0-1) unstable; urgency=medium
 
   [ Lev Lamberov ]
