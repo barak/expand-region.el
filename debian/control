@@ -7,8 +7,8 @@ Uploaders: Barak A. Pearlmutter <bap@debian.org>,
 Build-Depends: debhelper (>= 10), dh-elpa
 Standards-Version: 3.9.8
 Homepage: https://github.com/magnars/expand-region.el
-Vcs-Git: git://anonscm.debian.org/collab-maint/expand-region-el.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/expand-region-el.git
+Vcs-Git: https://alioth.debian.org/anonscm/git/collab-maint/expand-region-el.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/expand-region-el.git
 
 Package: elpa-expand-region
 Architecture: all
