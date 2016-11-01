@@ -4,7 +4,8 @@ Priority: extra
 Maintainer: Debian Emacs addons team <pkg-emacsen-addons@lists.alioth.debian.org>
 Uploaders: Barak A. Pearlmutter <bap@debian.org>,
            Lev Lamberov <dogsleg@debian.org>
-Build-Depends: debhelper (>= 10), dh-elpa
+Build-Depends: debhelper (>= 10),
+               dh-elpa
 Standards-Version: 3.9.8
 Homepage: https://github.com/magnars/expand-region.el
 Vcs-Git: https://alioth.debian.org/anonscm/git/collab-maint/expand-region-el.git
@@ -13,8 +14,11 @@ Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/expand-region-el.
 Package: elpa-expand-region
 Architecture: all
 Depends: ${misc:Depends}
-Enhances: emacs, emacs24, emacs25
-Breaks: sml-mode (<< 6), expand-region-el (<< 0.10.0-6)
+Enhances: emacs,
+          emacs24,
+          emacs25
+Breaks: sml-mode (<< 6),
+        expand-region-el (<< 0.10.0-6)
 Replaces: expand-region-el (<< 0.10.0-6)
 Provides: expand-region-el
 Description: Increase selected region in Emacs by semantic units
