@@ -1,3 +1,13 @@
+expand-region-el (0.11.0-1) unstable; urgency=medium
+
+  [ Lev Lamberov ]
+  * Add myself to Uploaders
+  * Modernize build-dependencies
+  * Use secure links in Vcs-Git and Vcs-Browser
+  * Get rid of emacs23, add emacs25
+
+ -- Lev Lamberov <dogsleg@debian.org>  Tue, 01 Nov 2016 19:52:39 +0500
+
 expand-region-el (0.10.0-9) unstable; urgency=medium
 
   * Merge upstream development branch to 02-Sep-2015 commit 59f67115
