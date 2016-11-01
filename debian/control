@@ -2,7 +2,8 @@ Source: expand-region-el
 Section: editors
 Priority: extra
 Maintainer: Debian Emacs addons team <pkg-emacsen-addons@lists.alioth.debian.org>
-Uploaders: Barak A. Pearlmutter <bap@debian.org>
+Uploaders: Barak A. Pearlmutter <bap@debian.org>,
+           Lev Lamberov <dogsleg@debian.org>
 Build-Depends: debhelper (>= 9), dh-elpa (>= 0.0.17)
 Standards-Version: 3.9.8
 Homepage: https://github.com/magnars/expand-region.el
