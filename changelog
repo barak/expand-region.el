@@ -1,0 +1,131 @@
+expand-region-el (0.11.0-3) unstable; urgency=medium
+
+  * update packaging: versions, swizzle to salsa
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 28 Mar 2018 17:06:51 +0100
+
+expand-region-el (0.11.0-2) unstable; urgency=medium
+
+  * Rearrange dependencies
+  * Fix mistaken upload
+
+ -- Lev Lamberov <dogsleg@debian.org>  Tue, 01 Nov 2016 19:58:56 +0500
+
+expand-region-el (0.11.0-1) unstable; urgency=medium
+
+  [ Lev Lamberov ]
+  * Add myself to Uploaders
+  * Modernize build-dependencies
+  * Use secure links in Vcs-Git and Vcs-Browser
+  * Get rid of emacs23, add emacs25
+
+ -- Lev Lamberov <dogsleg@debian.org>  Tue, 01 Nov 2016 19:52:39 +0500
+
+expand-region-el (0.10.0-9) unstable; urgency=medium
+
+  * Merge upstream development branch to 02-Sep-2015 commit 59f67115
+  * Merge Fortran support patch from Johan S Hysing
+  * Bump standards version, no changes required.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 24 May 2016 08:53:58 +0100
+
+expand-region-el (0.10.0-8) unstable; urgency=medium
+
+  * use dh --with elpa
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sun, 06 Dec 2015 15:42:38 +0000
+
+expand-region-el (0.10.0-7) unstable; urgency=medium
+
+  * rebuild with dh-elpa 0.0.16 (closes: #803344)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 05 Nov 2015 09:54:08 +0000
+
+expand-region-el (0.10.0-6) unstable; urgency=medium
+
+  * Engage dh_elpa
+    - remove previous emacs scripts
+    - rename package to elpa-expand-region
+    - patch to C-= is set during site-init time
+    - make expand-region-el into dummy transition package
+    - emacs addon team maintenance, per emacs addon team elpa policy
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 16 Sep 2015 08:27:32 +0100
+
+expand-region-el (0.10.0-5) unstable; urgency=medium
+
+  * Enable sml-mode-expansions, as these work with sml-mode 6.0+.
+  * Bump standards version, no changes required.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 15 Sep 2015 14:03:07 +0100
+
+expand-region-el (0.10.0-4) unstable; urgency=medium
+
+  * stylistic tweaks to debian/emacsen-install
+  * swizzle debian/watch to point directly to github
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sat, 08 Aug 2015 11:15:50 +0200
+
+expand-region-el (0.10.0-3) unstable; urgency=low
+
+  * Remove xemacs21 support (closes: #739309)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 18 Feb 2014 10:51:48 +0000
+
+expand-region-el (0.10.0-2) unstable; urgency=low
+
+  * emacsen-common compat file
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 11 Feb 2014 14:42:57 +0000
+
+expand-region-el (0.10.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Merge upstream fix for web-mode-expansions
+  * bump policy version (no changes needed)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 10 Feb 2014 12:36:27 +0000
+
+expand-region-el (0.9.0+2013.10.19-1) unstable; urgency=low
+
+  * Track upstream development snapshot
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 04 Nov 2013 13:05:27 +0000
+
+expand-region-el (0.9.0+2013.09.10-1) unstable; urgency=low
+
+  * Remove debian/README.Source, whose contents are no longer true
+  * Track upstream development snapshot (closes: #705499)
+  * Update quilt patch (upstream whitespace/context changes)
+  * Track debian repo url naming scheme du jour
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 26 Sep 2013 13:38:41 +0100
+
+expand-region-el (0.9.0-1) unstable; urgency=low
+
+  * New upstream version
+  * Disable sml-mode-expansions
+    - incompatible with Debian sml-mode 4.1-x
+    - tested upstream with sml-mode 6.3
+    - quilt patch to remove autoload
+    - debian/rules tweak to not install file
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 15 Apr 2013 09:50:57 +0100
+
+expand-region-el (0.8.0-1) unstable; urgency=low
+
+  * New (official) upstream release
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 28 Sep 2012 09:53:43 +0100
+
+expand-region-el (0+git.2.28e0f5-1) unstable; urgency=low
+
+  * New upstream snapshot
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 18 Sep 2012 13:08:50 +0100
+
+expand-region-el (0+git.1.d157d7f-1) unstable; urgency=low
+
+  * Initial release (Closes: #685720)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 23 Aug 2012 22:48:21 +0200
