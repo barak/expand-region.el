@@ -1,3 +1,9 @@
+expand-region-el (0.11.0-4) UNRELEASED; urgency=medium
+
+  * d/copyright: Use https protocol in Format field
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:09:17 +0200
+
 expand-region-el (0.11.0-3) unstable; urgency=medium
 
   * update packaging: versions, swizzle to salsa
