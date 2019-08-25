@@ -1,0 +1,140 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ expand-region-el (0.11.0-4) unstable; urgency=medium
+ .
+   [ Ondřej Nový ]
+   * d/copyright: Use https protocol in Format field
+ .
+   [ David Bremner ]
+   * rebuild with dh_elpa 1.16
+Author: David Bremner <bremner@debian.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2019-08-25
+
+--- expand-region-el-0.11.0.orig/expand-region.el
++++ expand-region-el-0.11.0/expand-region.el
+@@ -163,6 +163,8 @@ before calling `er/expand-region' for th
+ (eval-after-load "css-mode"      '(require 'css-mode-expansions))
+ (eval-after-load "erlang-mode"   '(require 'erlang-mode-expansions))
+ (eval-after-load "feature-mode"  '(require 'feature-mode-expansions))
++(eval-after-load "fortan-mode"   '(require 'fortran-mode-expansions))
++(eval-after-load "f90-mode"      '(require 'f90-mode-expansions))
+ (eval-after-load "sgml-mode"     '(require 'html-mode-expansions)) ;; html-mode is defined in sgml-mode.el
+ (eval-after-load "rhtml-mode"    '(require 'html-mode-expansions))
+ (eval-after-load "nxhtml-mode"   '(require 'html-mode-expansions))
+--- /dev/null
++++ expand-region-el-0.11.0/f90-expansions.el
+@@ -0,0 +1,47 @@
++;;; f90-expansions.el --- f90-mode expansions for expand-region
++
++;; Copyright (C) 2015 Johan S Hysing
++
++;; Author: Johan S Hysing
++;; Keywords: marking region
++
++;; This program is free software; you can redistribute it and/or modify
++;; it under the terms of the GNU General Public License as published by
++;; the Free Software Foundation, either version 3 of the License, or
++;; (at your option) any later version.
++
++;; This program is distributed in the hope that it will be useful,
++;; but WITHOUT ANY WARRANTY; without even the implied warranty of
++;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++;; GNU General Public License for more details.
++
++;; You should have received a copy of the GNU General Public License
++;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
++
++;;; Commentary:
++
++;; Feel free to contribute any other expansions for Fortran 90 at
++;;
++;;     https://github.com/magnars/expand-region.el
++
++;;; Code:
++
++(require 'expand-region-core)
++
++(defun er/f90-mark-block ()
++  "Mark the current f90 block."
++  (interactive)
++  (f90-beginning-of-block)
++  (set-mark (point))
++  (f90-end-of-block)
++  (exchange-point-and-mark))
++
++(defun er/add-f90-expansions ()
++  "Adds f90-specific expansions for buffers in f90-mode"
++    (set (make-local-variable 'er/try-expand-list)
++         (append er/try-expand-list '(er/f90-mark-block))))
++
++(er/enable-mode-expansions 'f90-mode 'er/add-f90-expansions)
++
++(provide 'f90-expansions)
++;;; f90-expansions.el ends here
+--- /dev/null
++++ expand-region-el-0.11.0/fortran-expansions.el
+@@ -0,0 +1,47 @@
++;;; fortran-expansions.el --- fortran-mode expansions for expand-region
++
++;; Copyright (C) 2015 Johan S Hysing
++
++;; Author: Johan S Hysing
++;; Keywords: marking region
++
++;; This program is free software; you can redistribute it and/or modify
++;; it under the terms of the GNU General Public License as published by
++;; the Free Software Foundation, either version 3 of the License, or
++;; (at your option) any later version.
++
++;; This program is distributed in the hope that it will be useful,
++;; but WITHOUT ANY WARRANTY; without even the implied warranty of
++;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++;; GNU General Public License for more details.
++
++;; You should have received a copy of the GNU General Public License
++;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
++
++;;; Commentary:
++
++;; Feel free to contribute any other expansions for Fortran at
++;;
++;;     https://github.com/magnars/expand-region.el
++
++;;; Code:
++
++(require 'expand-region-core)
++
++(defun er/fortran-mark-block ()
++  "Mark the current fortran block."
++  (interactive)
++  (fortran-beginning-of-block)
++  (set-mark (point))
++  (fortran-end-of-block)
++  (exchange-point-and-mark))
++
++(defun er/add-fortran-expansions ()
++  "Adds fortran-specific expansions for buffers in fortran-mode"
++    (set (make-local-variable 'er/try-expand-list)
++         (append er/try-expand-list '(er/fortran-mark-block))))
++
++(er/enable-mode-expansions 'fortran-mode 'er/add-fortran-expansions)
++
++(provide 'fortran-expansions)
++;;; fortran-expansions.el ends here
