@@ -1,8 +1,12 @@
-expand-region-el (0.11.0-4) UNRELEASED; urgency=medium
+expand-region-el (0.11.0-4) unstable; urgency=medium
 
+  [ Ondřej Nový ]
   * d/copyright: Use https protocol in Format field
 
- -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:09:17 +0200
+  [ David Bremner ]
+  * rebuild with dh_elpa 1.16
+
+ -- David Bremner <bremner@debian.org>  Sun, 25 Aug 2019 09:49:25 -0300
 
 expand-region-el (0.11.0-3) unstable; urgency=medium
 
