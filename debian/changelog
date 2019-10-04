@@ -1,3 +1,9 @@
+expand-region-el (0.11.0-5) UNRELEASED; urgency=medium
+
+  * Update maintainer email address
+
+ -- David Krauser <david@krauser.org>  Fri, 04 Oct 2019 14:56:39 -0400
+
 expand-region-el (0.11.0-4) unstable; urgency=medium
 
   [ Ondřej Nový ]
