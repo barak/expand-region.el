@@ -11,18 +11,18 @@ Subject: fortran
  create mode 100644 fortran-expansions.el
 
 diff --git a/expand-region.el b/expand-region.el
-index 1c2a0eb..96c3149 100644
+index 1c6d4b4..0898b45 100644
 --- a/expand-region.el
 +++ b/expand-region.el
 @@ -163,6 +163,8 @@ before calling `er/expand-region' for the first time."
- (eval-after-load "css-mode"      '(require 'css-mode-expansions))
- (eval-after-load "erlang-mode"   '(require 'erlang-mode-expansions))
- (eval-after-load "feature-mode"  '(require 'feature-mode-expansions))
-+(eval-after-load "fortan-mode"   '(require 'fortran-mode-expansions))
-+(eval-after-load "f90-mode"      '(require 'f90-mode-expansions))
- (eval-after-load "sgml-mode"     '(require 'html-mode-expansions)) ;; html-mode is defined in sgml-mode.el
- (eval-after-load "rhtml-mode"    '(require 'html-mode-expansions))
- (eval-after-load "nxhtml-mode"   '(require 'html-mode-expansions))
+ (eval-after-load 'css-mode       '(require 'css-mode-expansions))
+ (eval-after-load 'erlang-mode    '(require 'erlang-mode-expansions))
+ (eval-after-load 'feature-mode   '(require 'feature-mode-expansions))
++(eval-after-load 'fortan-mode    '(require 'fortran-mode-expansions))
++(eval-after-load 'f90-mode       '(require 'f90-mode-expansions))
+ (eval-after-load 'sgml-mode      '(require 'html-mode-expansions)) ;; html-mode is defined in sgml-mode.el
+ (eval-after-load 'rhtml-mode     '(require 'html-mode-expansions))
+ (eval-after-load 'nxhtml-mode    '(require 'html-mode-expansions))
 diff --git a/f90-expansions.el b/f90-expansions.el
 new file mode 100644
 index 0000000..b3f3680
