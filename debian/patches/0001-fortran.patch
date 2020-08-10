@@ -1,35 +1,20 @@
-Description: <short summary of the patch>
- TODO: Put a short summary on the line above and replace this paragraph
- with a longer explanation of this change. Complete the meta-information
- with other relevant fields (see below for details). To make it easier, the
- information below has been extracted from the changelog. Adjust it or drop
- it.
- .
- expand-region-el (0.11.0-4) unstable; urgency=medium
- .
-   [ Ondřej Nový ]
-   * d/copyright: Use https protocol in Format field
- .
-   [ David Bremner ]
-   * rebuild with dh_elpa 1.16
-Author: David Bremner <bremner@debian.org>
+From: "Barak A. Pearlmutter" <barak+git@pearlmutter.net>
+Date: Mon, 10 Aug 2020 11:23:11 +0100
+Subject: fortran
 
 ---
-The information above should follow the Patch Tagging Guidelines, please
-checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
-are templates for supplementary fields that you might want to add:
+ expand-region.el      |  2 ++
+ f90-expansions.el     | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ fortran-expansions.el | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 96 insertions(+)
+ create mode 100644 f90-expansions.el
+ create mode 100644 fortran-expansions.el
 
-Origin: <vendor|upstream|other>, <url of original patch>
-Bug: <url in upstream bugtracker>
-Bug-Debian: https://bugs.debian.org/<bugnumber>
-Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
-Forwarded: <no|not-needed|url proving that it has been forwarded>
-Reviewed-By: <name and email of someone who approved the patch>
-Last-Update: 2019-08-25
-
---- expand-region-el-0.11.0.orig/expand-region.el
-+++ expand-region-el-0.11.0/expand-region.el
-@@ -163,6 +163,8 @@ before calling `er/expand-region' for th
+diff --git a/expand-region.el b/expand-region.el
+index 1c2a0eb..96c3149 100644
+--- a/expand-region.el
++++ b/expand-region.el
+@@ -163,6 +163,8 @@ before calling `er/expand-region' for the first time."
  (eval-after-load "css-mode"      '(require 'css-mode-expansions))
  (eval-after-load "erlang-mode"   '(require 'erlang-mode-expansions))
  (eval-after-load "feature-mode"  '(require 'feature-mode-expansions))
@@ -38,8 +23,11 @@ Last-Update: 2019-08-25
  (eval-after-load "sgml-mode"     '(require 'html-mode-expansions)) ;; html-mode is defined in sgml-mode.el
  (eval-after-load "rhtml-mode"    '(require 'html-mode-expansions))
  (eval-after-load "nxhtml-mode"   '(require 'html-mode-expansions))
+diff --git a/f90-expansions.el b/f90-expansions.el
+new file mode 100644
+index 0000000..b3f3680
 --- /dev/null
-+++ expand-region-el-0.11.0/f90-expansions.el
++++ b/f90-expansions.el
 @@ -0,0 +1,47 @@
 +;;; f90-expansions.el --- f90-mode expansions for expand-region
 +
@@ -88,8 +76,11 @@ Last-Update: 2019-08-25
 +
 +(provide 'f90-expansions)
 +;;; f90-expansions.el ends here
+diff --git a/fortran-expansions.el b/fortran-expansions.el
+new file mode 100644
+index 0000000..cd82858
 --- /dev/null
-+++ expand-region-el-0.11.0/fortran-expansions.el
++++ b/fortran-expansions.el
 @@ -0,0 +1,47 @@
 +;;; fortran-expansions.el --- fortran-mode expansions for expand-region
 +
