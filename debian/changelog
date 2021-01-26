@@ -1,12 +1,18 @@
-expand-region-el (0.11.0-5) UNRELEASED; urgency=medium
+expand-region-el (0.11.0-5) unstable; urgency=medium
 
+  * Team upload
+
+  [ Barak A. Pearlmutter ]
   * Set upstream metadata fields: Repository, Repository-Browse.
   * bump debhelper from old 11 to 13 and set in debhelper-compat
   * push fortran support into quilt patch
   * track post-tagged-release upstream changes, which seem to be rolling
   * bump policy
 
- -- Barak A. Pearlmutter <bap@debian.org>  Mon, 10 Aug 2020 11:53:18 +0100
+  [ David Bremner ]
+  * Rebuild with dh-elpa 2.x
+
+ -- David Bremner <bremner@debian.org>  Tue, 26 Jan 2021 07:38:19 -0400
 
 expand-region-el (0.11.0-4) unstable; urgency=medium
 
