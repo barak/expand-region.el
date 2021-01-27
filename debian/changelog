@@ -1,4 +1,4 @@
-expand-region-el (0.11.0-5) unstable; urgency=medium
+expand-region-el (0.11.0+36-1) unstable; urgency=medium
 
   * Team upload
 
@@ -12,8 +12,9 @@ expand-region-el (0.11.0-5) unstable; urgency=medium
   [ David Bremner ]
   * Rebuild with dh-elpa 2.x
   * Drop option single-debian-patch
+  * Upstream snapshot
 
- -- David Bremner <bremner@debian.org>  Tue, 26 Jan 2021 07:42:10 -0400
+ -- David Bremner <bremner@debian.org>  Wed, 27 Jan 2021 08:13:32 -0400
 
 expand-region-el (0.11.0-4) unstable; urgency=medium
 
