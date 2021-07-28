@@ -1,7 +1,7 @@
 Source: expand-region-el
 Section: editors
 Priority: optional
-Maintainer: Debian Emacs addons team <pkg-emacsen-addons@alioth-lists.debian.net>
+Maintainer: Debian Emacsen Team <debian-emacsen@lists.debian.org>
 Uploaders: Barak A. Pearlmutter <bap@debian.org>,
            Lev Lamberov <dogsleg@debian.org>
 Build-Depends: debhelper-compat (= 13), dh-elpa
