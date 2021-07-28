@@ -1,6 +1,10 @@
 expand-region-el (0.11.0+36-2) UNRELEASED; urgency=medium
 
+  [ David Krauser ]
   * Update maintainer email address
+
+  [ Nicholas D Steeves ]
+  * Drop emacs24 and emacs25 from Enhances (both removed in bullseye).
 
  -- David Krauser <david@krauser.org>  Fri, 04 Oct 2019 14:56:39 -0400
 

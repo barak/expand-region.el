@@ -14,8 +14,6 @@ Package: elpa-expand-region
 Architecture: all
 Depends: ${misc:Depends}
 Enhances: emacs,
-          emacs24,
-          emacs25
 Breaks: sml-mode (<< 6),
         expand-region-el (<< 0.10.0-6)
 Replaces: expand-region-el (<< 0.10.0-6)
