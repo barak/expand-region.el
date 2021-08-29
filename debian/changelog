@@ -6,6 +6,9 @@ expand-region-el (0.11.0+36-2) UNRELEASED; urgency=medium
   [ Nicholas D Steeves ]
   * Drop emacs24 and emacs25 from Enhances (both removed in bullseye).
 
+  [ Barak A. Pearlmutter ]
+  * Update standards version to 4.6.0, no changes needed.
+
  -- David Krauser <david@krauser.org>  Fri, 04 Oct 2019 14:56:39 -0400
 
 expand-region-el (0.11.0+36-1) unstable; urgency=medium
